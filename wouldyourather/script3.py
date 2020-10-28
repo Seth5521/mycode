@@ -9,7 +9,6 @@ question4="empty"
 question5="empty"
 question6="empty"
 
-while question1 !=("travel", or "stay", or "neither")
 
 question1=input("TRAVEL abroad or STAY at home?")
 if question1.lower() == "travel":
