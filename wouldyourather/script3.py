@@ -23,7 +23,7 @@ else:
 	question2=input("Eat a BURGER or eat a PIZZA")
 if question2.lower() == "burger":
 	print("probably well done too, lunatic")
-elif question2.lower() == "PIZZA":
+elif question2.lower() == "pizza":
 	print("Pineapples with that as well?")
 elif question2.lower() == "neither":
 	print("it's just a game, stop being strange")
