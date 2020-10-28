@@ -2,12 +2,12 @@
 
 print("Please choose your answer by typing the capitalized phrase from the question.")
 print("Would you rather:")
-question1="empty"
-question2="empty"
-question3="empty"
-question4="empty"
-question5="empty"
-question6="empty"
+#question1="empty"
+#question2="empty"
+#question3="empty"
+#question4="empty"
+#question5="empty"
+#question6="empty"
 
 
 question1=input("TRAVEL abroad or STAY at home?")
@@ -20,7 +20,7 @@ elif question1.lower() == "neither":
 else:
 	print("That wasn't an option silly goose")
 	
-	question2=input("Eat a BURGER or eat a PIZZA")
+question2=input("Eat a BURGER or eat a PIZZA")
 if question2.lower() == "burger":
 	print("probably well done too, lunatic")
 elif question2.lower() == "pizza":
@@ -40,7 +40,7 @@ elif question3.lower() == "neither":
 else:
 	print("That wasn't an option, you gotta pick one")
 	
-	question4=input("ROAD trip or book a FLIGHT to your destination?")
+question4=input("ROAD trip or book a FLIGHT to your destination?")
 if question4.lower() == "road":
 	print("Better get working on that playlist")
 elif question4.lower() == "flight":
@@ -61,7 +61,7 @@ elif question5.lower() == "what?":
 else:
 	print("That wasn't an option dummy")
 	
-	question6=input("VISIT the dentist or DONATE blood.")
+question6=input("VISIT the dentist or DONATE blood.")
 if question6.lower() == "visit":
 	print("Free toothbrush ammirite?")
 elif question6.lower() == "donate":
