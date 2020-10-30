@@ -13,23 +13,28 @@ print( switch["ip"] )
                             # if a KEY is requested that does not exist,
                             # an ERROR will be thrown!
 
-## request a 'fake' key with .get() method
-print( "First test - .get()" )
-print( switch.get("lynx") )
+#  request a 'fake' key with .get() method
 
-print( "Second test - .get()" )
-print( switch.get("lynx", "THE KEY IS IN ANOTHER CASTLE!") )
+print("First test - .get()")
+print(switch.get("lynx"))
 
-print( "Third test - .get()" )
-print( switch.get("version") )
-                                                                     
+print("Second test - .get()")
+print(switch.get("lynx", "The key is in another castle!"))
+
+print("Third test - .get()")
+print(switch["version"])
+
+print("********************************************")
+
 print( "Fourth test - .keys()" )
 print( switch.keys() )
 
 print( "Fifth test - .values()" )
 print( switch.values() )
-print( "Sixth test - .pop()" )
 
+
+print("******************************************")
+print( "Sixth test - .pop()" )
 switch.pop("version") # removes this key (and value) pair
 print( switch.keys() )   # notice the value of version is gone
 print( switch.values() ) # notice the value 1.2

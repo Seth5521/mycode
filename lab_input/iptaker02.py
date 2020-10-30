@@ -7,3 +7,5 @@ user_input = input("Please enter an IPv4 IP address:")
 ## print() can be given a series of objects separated by a comma
 print("You told me the IPv4 address is:", user_input)
 
+user_input = input("Which vendor do you use?")
+print("The vendor you told me is: ", user_input)
