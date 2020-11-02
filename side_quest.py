@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-
 #printing the question to the user
 import time
 import random
@@ -8,6 +7,7 @@ import random
 print("What is your quest?")
 quest=input()
 quest.replace("my","your")
+quest.replace("your","my")
 #find out out to change "my" to "your" for output
 quest=(quest.replace("my", "your"))
 print(f"You seek {quest}?")
@@ -26,3 +26,16 @@ print(f"The stranger asks 'will you take your {random.choice(animal_list)} with 
 
 companion_animal=input()
 
+time.sleep(2)
+print(r"""
+
+ _____   _             _               
+|  _  |_| |_ _ ___ ___| |_ _ _ ___ ___ 
+|     | . | | | -_|   |  _| | |  _| -_|
+|__|__|___|\_/|___|_|_|_| |___|_| |___|
+   _____ _                             
+  |_   _|_|_____ ___                   
+    | | | |     | -_|                  
+    |_| |_|_|_|_|___|                  
+                              
+                """)
