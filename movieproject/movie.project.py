@@ -1,8 +1,12 @@
+import pandas as pd
 from random import seed
 from random import randint
 import xlrd
+import numpy as np
 
-path = "movies.xls"
+df_excel = pd.read_excel('movies5.xls')
+
+path = "movies5.xls"
 
 inputWorkbook = xlrd.open_workbook(path)
 inputWorksheet = inputWorkbook.sheet_by_index(0)
@@ -27,9 +31,13 @@ def time_date():
     sixth_value = str(randint(1,31))
     print(first_value+":"+second_value + third_value, fifth_value+"/"+sixth_value)
 
-#time_date()
-print(title)
-print(year)
-print(genre)
-print(rating)
 
+#time_date()
+#print(title)
+#print(year)
+#print(genre)
+#print(rating)
+df_excel.columns = ['IDK', 'Title', 'Year', 'Genres', 'Content Rating', 'Duration']
+df_excel.drop(columns='IDK')
+print(df_excel)
+#printing only the relavent columns
